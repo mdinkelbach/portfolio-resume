@@ -8,10 +8,7 @@ function Content() {
   return (
     <div>
       <p>Content</p>
-      <About />
       <Portfolio />
-      <Contact />
-      <Resume />
     </div>
   );
 }
