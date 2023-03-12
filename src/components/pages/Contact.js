@@ -1,9 +1,8 @@
-import React from 'react';
-
 function Contact() {
   return (
     <div>
-      <p>This is where you can send me a message.</p>
+        <h1>Contact</h1>
+        <p>This is where you can send me a message.</p>
     </div>
   );
 }
