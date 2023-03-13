@@ -6,9 +6,9 @@ import Resume from './pages/Resume';
 
 function Content() {
   return (
-    <body>
+    <div className='body'>
       <About />
-    </body>
+    </div>
   );
 }
 
