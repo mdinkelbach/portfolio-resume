@@ -16,7 +16,7 @@ function Resume() {
             </ul>
           </div>
           <div>
-            <h3>Back-End liroficiencies</h3>
+            <h3>Back-End Proficiencies</h3>
             <ul>
               <li>APIs</li>
               <li>Node</li>

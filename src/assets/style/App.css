@@ -1,0 +1,18 @@
+* {
+    font-family: 'capriola';
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E6684E;
+    
+}
