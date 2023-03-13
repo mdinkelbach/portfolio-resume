@@ -1,7 +1,10 @@
 import React from 'react';
 
 
-function Nav({ currentPage, handlePageChange }) {
+function Nav({ currentPage, setCurrentPage }) {
+
+  const handlePageChange = (page) => setCurrentPage(page);
+
   return (
     <ul className="nav justify-content-end">
       <li className="nav-item">

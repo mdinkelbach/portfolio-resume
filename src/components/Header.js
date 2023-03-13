@@ -1,11 +1,11 @@
 import React from 'react';
 import Nav from "./Nav";
 
-function Header() {
+function Header({currentPage, setCurrentPage}) {
   return (
     <header className="header">
       <h1>Mdinkelbach</h1>
-      <Nav />
+      <Nav currentPage={currentPage} setCurrentPage={setCurrentPage}/>
     </header>
   );
 }
