@@ -27,12 +27,12 @@ function Contact() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email)) {
-      setErrorMessage('Please enter a valid Email');
-      return;
-    }
     if (!userName) {
       setErrorMessage('Please enter a name');
+      return;
+    }
+    if (!validateEmail(email)) {
+      setErrorMessage('Please enter a valid Email');
       return;
     }
     if (!message) {
@@ -44,6 +44,7 @@ function Contact() {
     setUserName('');
     setMessage('');
     setEmail('');
+    setErrorMessage('');
   };
   
 
@@ -73,9 +74,9 @@ function Contact() {
           type="email"
           placeholder="Email"
         />
-        {Boolean(email) || (
+        {Boolean(!validateEmail(email)) || (
         <div className="err-msg">
-          Please include an email address
+          Please include a valid email address
         </div>
       )}
         <input
