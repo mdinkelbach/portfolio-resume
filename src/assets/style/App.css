@@ -32,7 +32,7 @@
     color: white;
     padding: 0 1rem;
     gap: 2rem;
-    height: 4rem;
+    height: 10rem;
 }
 
 .header h1 {
@@ -58,9 +58,23 @@
     color: white;
 }
 
+.about {
+    padding: 2rem 0;
+}
+
+.about h1 {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.profile-text {
+    margin: 0;
+    padding: 1rem 0;
+}
+
 .profile-pic {
-    height: 100px;
-    width: 100px;
+    height: 250px;
+    width: 250px;
 }
 
 .footer {
