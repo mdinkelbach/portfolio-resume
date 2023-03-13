@@ -22,18 +22,21 @@ function Contact() {
       setMessage(inputValue);
     }
   };
+  
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email) || !userName) {
-      setErrorMessage('Email or Name is invalid or missing');
+    if (!validateEmail(email)) {
+      setErrorMessage('Please enter a valid Email');
+      return;
+    }
+    if (!userName) {
+      setErrorMessage('Please enter a name');
       return;
     }
     if (!message) {
-      setErrorMessage(
-        `Please attach a message`
-      );
+      setErrorMessage(`Please attach a message`);
       return;
     }
     alert(`Your message has been sent!`);
@@ -58,6 +61,11 @@ function Contact() {
           type="text"
           placeholder="Name"
         />
+        {Boolean(userName) || (
+        <div className="err-msg">
+          Please include a name
+        </div>
+      )}
         <input
           value={email}
           name="email"
@@ -65,6 +73,11 @@ function Contact() {
           type="email"
           placeholder="Email"
         />
+        {Boolean(email) || (
+        <div className="err-msg">
+          Please include an email address
+        </div>
+      )}
         <input
           value={message}
           name="message"
@@ -72,6 +85,11 @@ function Contact() {
           type="text"
           placeholder="Message"
         />
+        {Boolean(message) || (
+        <div className="err-msg">
+          Please include a message
+        </div>
+      )}
         <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (
