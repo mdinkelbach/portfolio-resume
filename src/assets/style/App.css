@@ -8,11 +8,32 @@
     width: 85vw;
 }
 
-
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E6684E;
-    
+    background-color: #333;
+    color: white;
+    padding: 0 1rem;
+    gap: 2rem;
+    height: 4rem;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.nav a {
+    color: inherit; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav li.active {
+    background-color: #555;
+}
+
+.nav li:hover {
+    background-color: #777;
 }
