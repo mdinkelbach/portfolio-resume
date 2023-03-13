@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
 return (
-    <footer>
-        <ul className="footer">
+    <footer className="footer">
+        <ul className="footer-list">
             <li>
                 <a 
                     href="https://github.com/mdinkelbach"
