@@ -7,7 +7,7 @@ import Resume from './pages/Resume';
 function Content() {
   return (
     <div className='content'>
-      <About />
+      <Portfolio />
     </div>
   );
 }
