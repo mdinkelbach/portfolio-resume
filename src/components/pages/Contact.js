@@ -51,6 +51,7 @@ function Contact() {
   return (
     <div className="contact">
         <h1>Contact</h1>
+        <div className='information'>
         <p className='contact-text'>If you would like to get in touch with me, please send me a message!</p>
         <p className='contact-text'>Or if you prefer, you can send an email to mj.dinkelbach@gmail.com.</p>
         <div>
@@ -102,6 +103,7 @@ function Contact() {
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
+        </div>
         </div>
     </div>
   );

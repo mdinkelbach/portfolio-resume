@@ -36,10 +36,6 @@
     height: 10rem;
 }
 
-.header h1 {
-    margin: 0;
-}
-
 .nav a {
     color: inherit; 
     height: 100%;
@@ -47,8 +43,9 @@
     align-items: center;
 }
 
-.nav li.active {
+.nav li .active {
     background-color: #555;
+    color: white;
 }
 
 .nav li:hover {
@@ -59,17 +56,21 @@
     color: white;
 }
 
-.about, .portfolio, .contact {
-    padding: 2rem 0;
+.about, .portfolio, .contact, .resume {
+    padding: 2rem .5rem;
     color: #111;
 }
 
-.about h1, .portfolio h1, .contact h1 {
+.header h1, .about h1, .portfolio h1, .contact h1, .resume h1 {
     margin: 0;
     padding: 1rem 0;
 }
 
-.profile-text, .contact-text {
+.profile, .proficiencies, .information {
+    padding: 1rem;
+}
+
+.profile-text, .contact-text, .resume-text {
     margin: 0;
     padding: 1rem 0;
 }
