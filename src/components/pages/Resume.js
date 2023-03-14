@@ -1,10 +1,10 @@
 function Resume() {
   return (
-    <div>
+    <div className="resume">
         <h1>Resume</h1>
-        <p>Download a copy of my resume here.</p>
-        <div>
-          <div>
+        <p className="resume-text">Download a copy of my resume here.</p>
+        <div className="proficiencies">
+          <div className="proficiencies-front">
           <h3>Front-End Proficiencies</h3>
             <ul>
               <li>HTML</li>
@@ -15,7 +15,7 @@ function Resume() {
               <li>Bootstrap</li>
             </ul>
           </div>
-          <div>
+          <div className="proficiencies-back">
             <h3>Back-End Proficiencies</h3>
             <ul>
               <li>APIs</li>
