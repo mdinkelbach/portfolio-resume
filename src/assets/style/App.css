@@ -59,16 +59,17 @@
     color: white;
 }
 
-.about {
+.about, .portfolio, .contact {
     padding: 2rem 0;
+    color: #111;
 }
 
-.about h1 {
+.about h1, .portfolio h1, .contact h1 {
     margin: 0;
     padding: 1rem 0;
 }
 
-.profile-text {
+.profile-text, .contact-text {
     margin: 0;
     padding: 1rem 0;
 }
@@ -76,16 +77,6 @@
 .profile-pic {
     height: 250px;
     width: 250px;
-}
-
-.portfolio {
-    padding: 2rem 0;
-    color: #111;
-}
-
-.portfolio h1 {
-    margin: 0;
-    padding: 1rem 0;
 }
 
 .portfolio-list {
@@ -118,6 +109,30 @@
     height: 400px;
     width: 650px;
     padding: .5rem;
+}
+
+.form {
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+}
+
+.form-item {
+    padding: .25rem;
+    margin: .5rem;
+}
+
+.err-msg {
+    padding: .25rem;
+}
+
+#message {
+    height: 7rem;
+}
+
+.form button {
+    width: 5rem;
 }
 
 .footer {
