@@ -136,6 +136,15 @@
     width: 5rem;
 }
 
+.resume-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.resume-link:hover {
+    color: #555;
+}
+
 .footer {
     display: flex;
     justify-content: space-around;
