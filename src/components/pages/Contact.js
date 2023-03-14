@@ -49,13 +49,14 @@ function Contact() {
   
 
   return (
-    <div>
+    <div className="contact">
         <h1>Contact</h1>
-        <p>If you would like to get in touch with me, please send me a message!</p>
-        <p>Or if you prefer, you can send an email to mj.dinkelbach@gmail.com.</p>
+        <p className='contact-text'>If you would like to get in touch with me, please send me a message!</p>
+        <p className='contact-text'>Or if you prefer, you can send an email to mj.dinkelbach@gmail.com.</p>
         <div>
         <form className="form">
         <input
+          className="form-item"
           value={userName}
           name="userName"
           onChange={handleInputChange}
@@ -68,18 +69,21 @@ function Contact() {
         </div>
       )}
         <input
+          className="form-item"
           value={email}
           name="email"
           onChange={handleInputChange}
           type="email"
           placeholder="Email"
         />
-        {Boolean(!validateEmail(email)) || (
+        {Boolean(validateEmail(email)) || (
         <div className="err-msg">
           Please include a valid email address
         </div>
       )}
         <input
+          className="form-item"
+          id="message"
           value={message}
           name="message"
           onChange={handleInputChange}
