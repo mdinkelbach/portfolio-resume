@@ -21,7 +21,7 @@ function Resume() {
               <li>APIs</li>
               <li>Node</li>
               <li>Express</li>
-              <li>MySQL, Sequalize</li>
+              <li>MySQL, Sequelize</li>
               <li>MongoDB, Mongoose</li>
               <li>GraphQL</li>
             </ul>
