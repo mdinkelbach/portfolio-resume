@@ -2,7 +2,7 @@ import password from '../../assets/images/password.png'
 import workDay from '../../assets/images/work-day.png'
 import weather from '../../assets/images/weather.png'
 import conversion from '../../assets/images/gw2.png'
-import techBlog from '../../assets/images/tech-blog.png'
+import bexarMarket from '../../assets/images/bexar-market.png'
 import daze from '../../assets/images/doggy-daze.png'
 
 function Portfolio() {
@@ -48,20 +48,20 @@ function Portfolio() {
             </a>
           </div>
           <div className="portfolio-item">
-            <a href="https://tech-blog-mdinkelbach.herokuapp.com/">
-            Tech Blog
-            <img src={techBlog} className="portfolio-image img-thumbnail"></img>
-            </a>
-            <a href="https://github.com/mdinkelbach/tech-blog">
-              GitHub Repo
-            </a>
-          </div>
-          <div className="portfolio-item">
             <a href="https://ancient-plains-63296.herokuapp.com/">
             Doggy Daze
             <img src={daze} className="portfolio-image img-thumbnail"></img>
             </a>
             <a href="https://github.com/RosalvaMartinez/project">
+              GitHub Repo
+            </a>
+          </div>
+          <div className="portfolio-item">
+            <a href="https://bexar-market.herokuapp.com/">
+            Bexar-Market
+            <img src={bexarMarket} className="portfolio-image img-thumbnail"></img>
+            </a>
+            <a href="https://github.com/jessicashong/bexar-market">
               GitHub Repo
             </a>
           </div>
